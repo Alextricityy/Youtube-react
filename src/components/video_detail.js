@@ -20,4 +20,4 @@ const videoDetail = ({video}) => {
     );
 };
 
-export default VideoDetail;
+export default videoDetail;
