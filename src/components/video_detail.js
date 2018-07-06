@@ -19,5 +19,6 @@ const videoDetail = ({video}) => {
         </div>
     );
 };
-
+//iframe for youtube videos
+//embed embed-responsive aspect ratio
 export default videoDetail;

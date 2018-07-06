@@ -2,6 +2,7 @@ import React from "react";
 
 const VideoListItem = ({video, onVideoSelect}) => {
     // const video = props.video;
+    //const onVideoSelect = props.onVideoSelect
     const imageUrl = video.snippet.thumbnails.default.url;
 
     return (
@@ -18,4 +19,5 @@ const VideoListItem = ({video, onVideoSelect}) => {
     </li>
     );
 };
+
 export default VideoListItem;

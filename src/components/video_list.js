@@ -10,7 +10,7 @@ const VideoList = (props) => {
       video={video}/>
       );
   });
-
+//etag from youtube documentation
   return (
     <ul className="col-md-4 list-group">
     {videoItems}

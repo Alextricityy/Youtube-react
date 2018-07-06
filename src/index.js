@@ -2,12 +2,13 @@ import React, {Component } from 'react';
 import ReactDOM from 'react-dom';
 
 import _ from 'lodash';
-
 import YTSearch from 'youtube-api-search';
 
+// my files
 import SearchBar from './components/search_bar';
 import VideoList from './components/video_list';
 import VideoDetail from './components/video_detail';
+
 const API_KEY = 'AIzaSyB8itqjlrnSUVBl3o6SI9NJbzZIuIYDO40';
 
 
@@ -24,6 +25,7 @@ class App extends Component {
       };
 
       this.videoSearch('user replay');
+      //default search
 
   }
 
@@ -32,12 +34,14 @@ class App extends Component {
       this.setState({
         videos: videos,
         selectedVideo: videos[0]
+        //play first result
       });
     });
   }
 
   render(){
     const videoSearch = _.debounce((term) =>{ this.videoSearch(term) }, 300);
+    //lodash calls function after 300ms
     return (
       <div>
       <SearchBar onSearchTermChange = {videoSearch} />
